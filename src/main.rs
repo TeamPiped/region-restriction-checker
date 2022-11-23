@@ -117,5 +117,6 @@ async fn check(query: web::Query<VideoIdQuery>, redis: web::Data<redis::Client>)
     };
 
     HttpResponse::Ok()
+        .content_type("application/json")
         .body(serde_json::to_string(&restrictions).unwrap())
 }

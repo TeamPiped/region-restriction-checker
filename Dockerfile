@@ -12,4 +12,4 @@ WORKDIR /app/
 
 COPY --from=builder /app/target/release/region-restriction-checker .
 
-CMD ["./region-restriction-checker"]
+CMD ["/app/region-restriction-checker"]

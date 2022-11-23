@@ -9,6 +9,7 @@ jobs:
       - checkout
       - run:
           command: |
+            export DOCKER_BUILDKIT=1
             docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
             docker build -t 1337kavin/restriction-checker:latest-arm64 .
             docker push 1337kavin/restriction-checker:latest-arm64
@@ -20,6 +21,7 @@ jobs:
       - checkout
       - run:
           command: |
+            export DOCKER_BUILDKIT=1
             docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
             docker build -t 1337kavin/restriction-checker:latest-amd64 .
             docker push 1337kavin/restriction-checker:latest-amd64

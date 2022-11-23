@@ -22,6 +22,9 @@ services:
     environment:
       - REDIS_URL=redis://redis:6379
       - PROXY=socks5://tor-proxy:5566
+    depends_on:
+      - redis
+      - tor-proxy
 
 volumes:
   redis_data: null

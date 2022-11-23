@@ -6,7 +6,7 @@ COPY . .
 
 RUN cargo build --release
 
-FROM alpine:latest
+FROM debian:stable-slim
 
 WORKDIR /app/
 

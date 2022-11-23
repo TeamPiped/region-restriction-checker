@@ -55,7 +55,7 @@ async fn fetch_restrictions(video_id: &str) -> RestrictionInfo {
         .header("X-Origin", "https://explorer.apis.google.com")
         .header("X-Referer", "https://explorer.apis.google.com")
         .header("X-Goog-Encode-Response-If-Executable", "base64")
-        .header("Connection", "keep-alive")
+        .header("Connection", "close")
         .header("Sec-Fetch-Dest", "empty")
         .header("Sec-Fetch-Mode", "cors")
         .header("Sec-Fetch-Site", "same-origin")

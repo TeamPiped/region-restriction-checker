@@ -292,7 +292,7 @@ const ALL_REGIONS: [&str; 244] = [
 
 #[async_recursion]
 async fn fetch_restrictions(video_id: &str) -> RestrictionInfo {
-    let resp = CLIENT.get(format!("https://content-youtube.googleapis.com/youtube/v3/videos?id={}&part=contentDetails&key=AIzaSyAa8yy0GdcGPHdtD083HiGGx_S0vMPScDM", video_id))
+    let resp = CLIENT.get(format!("https://content-youtube.googleapis.com/youtube/v3/videos?id={video_id}&part=contentDetails&key=AIzaSyAa8yy0GdcGPHdtD083HiGGx_S0vMPScDM"))
         .header("Accept", "*/*")
         .header("Accept-Language", "en-US,en;q=0.5")
         .header("Referer", "https://content-youtube.googleapis.com/")

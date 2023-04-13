@@ -13,5 +13,5 @@ redis = { version = "0.23.0", default-features = false, features = ["tokio-comp"
 regex = "1.7.3"
 reqwest = { version = "0.11.16", default-features = false, features = ["rustls-tls", "gzip", "json", "socks"] }
 serde = {version = "1.0.160", default-features = false, features = ["derive"]}
-serde_json = "1.0.95"
+serde_json = "1.0.96"
 tokio = { version = "1.27.0", features = ["full"] }

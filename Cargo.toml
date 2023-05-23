@@ -10,7 +10,7 @@ async-recursion = "1.0.4"
 actix-web = "4.3.1"
 lazy_static = "1.4.0"
 redis = { version = "0.23.0", default-features = false, features = ["tokio-comp", "connection-manager"] }
-regex = "1.8.1"
+regex = "1.8.2"
 reqwest = { version = "0.11.18", default-features = false, features = ["rustls-tls", "gzip", "json", "socks"] }
 serde = {version = "1.0.163", default-features = false, features = ["derive"]}
 serde_json = "1.0.96"

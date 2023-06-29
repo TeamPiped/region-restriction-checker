@@ -7,6 +7,7 @@
     "ignorePresets": [
         ":prHourlyLimit2"
     ],
+    "platformAutomerge": true,
     "packageRules": [
         {
             "matchUpdateTypes": [
@@ -15,8 +16,11 @@
                 "pin",
                 "digest"
             ],
-            "automerge": true,
-            "platformAutomerge": true
+            "automerge": true
         }
-    ]
+    ],
+    "lockFileMaintenance": {
+        "enabled": true,
+        "automerge": true
+    }
 }

@@ -12,6 +12,6 @@ lazy_static = "1.4.0"
 redis = { version = "0.23.2", default-features = false, features = ["tokio-comp", "connection-manager"] }
 regex = "1.9.3"
 reqwest = { version = "0.11.20", default-features = false, features = ["rustls-tls", "gzip", "json", "socks"] }
-serde = {version = "1.0.185", default-features = false, features = ["derive"]}
+serde = {version = "1.0.186", default-features = false, features = ["derive"]}
 serde_json = "1.0.105"
 tokio = { version = "1.32.0", features = ["full"] }

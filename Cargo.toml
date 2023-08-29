@@ -7,7 +7,7 @@ version = "0.1.0"
 
 [dependencies]
 async-recursion = "1.0.4"
-actix-web = "4.3.1"
+actix-web = "4.4.0"
 lazy_static = "1.4.0"
 redis = { version = "0.23.2", default-features = false, features = ["tokio-comp", "connection-manager"] }
 regex = "1.9.4"

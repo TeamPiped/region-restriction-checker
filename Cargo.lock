@@ -1167,9 +1167,9 @@ dependencies = [
 
 [[package]]
 name = "redis"
-version = "0.27.2"
+version = "0.27.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a7e86f5670bd8b028edfb240f0616cad620705b31ec389d55e4f3da2c38dcd48"
+checksum = "92f61607c4c4442b575fbc3f31a5dd4e5dd69cfea8f6afec5b83e24f61c126ab"
 dependencies = [
  "arc-swap",
  "async-trait",
@@ -1183,7 +1183,7 @@ dependencies = [
  "pin-project-lite",
  "ryu",
  "tokio",
- "tokio-retry",
+ "tokio-retry2",
  "tokio-util",
  "url",
 ]
@@ -1610,10 +1610,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "tokio-retry"
-version = "0.3.0"
+name = "tokio-retry2"
+version = "0.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f57eb36ecbe0fc510036adff84824dd3c24bb781e21bfa67b69d556aa85214f"
+checksum = "c093bc28674bb8824c31e3c4dd87512d0b9427ce8ec45f0a38a3bf57c426b636"
 dependencies = [
  "pin-project",
  "rand",
